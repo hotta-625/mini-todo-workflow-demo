@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ミニ ToDo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>ミニ ToDo</h1>
+      <p>やることを1つずつ片付けよう。</p>
+      <form id="task-form">
+        <label class="sr-only" for="task-input">新しいタスク</label>
+        <input id="task-input" type="text" placeholder="例：買い物をする" required maxlength="80" />
+        <button type="submit">追加</button>
+      </form>
+      <ul id="task-list" aria-live="polite"></ul>
+      <button id="clear-completed" class="secondary" type="button">完了したタスクを消す</button>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
